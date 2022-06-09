@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>訂單資訊</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/order.css') }}">
+</head>
+<body>
+    <div style="margin:0px auto"><h1>訂單查詢</h1></div>
+    <div id="function">
+        <form action="/order_result" method="POST">
+            <input type="text" placeholder="請輸入訂單編號" name="order_number" method="POST">
+            <button class="but">查詢</button><br>
+            <h5><a href="/member">返回主選單</a></h5>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>訂單資訊</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/order_result.css') }}">
+</head>
+<body>
+    <div class="main"><h1>訂單資訊</h1></div>
+    <div class="data">
+        <table style="table-layout:fixed;">
+            <thead>
+                
+                {% for i in labels %}
+                <td>{{ i }}</td>
+                {% endfor %}
+                
+            </thead>
+            <tbody>
+            {% for i in order %}
+                <tr>
+                    {% for j in i %}
+                        <td>{{ j }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align:center">
+        <a href="/member">返回主選單</a>
+        <a href="/order_query">繼續查詢</a>
+        <a href="/just_picture">包貨</a>
+    </div>
+</body>
+</html>

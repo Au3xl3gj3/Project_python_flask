@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>錯誤頁面</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/error.css') }}">
+</head>
+<body>
+    <h2 style="text-align:center">發生錯誤</h2>
+    <div style="text-align:center;color:white">{{ message }}</div>
+    <div style="text-align:center"><a href="/">回到登入畫面</a></div>
+</body>
+</html>

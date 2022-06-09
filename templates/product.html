@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品資訊</title>
+    <!-- <style>
+        .main{
+            background-color: aqua;
+        }
+    </style> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/product.css') }}">
+</head>
+<body>
+    <div class="main"><h1>商品資訊</h1></div>
+    <div class="data">
+        <table>
+            <thead>
+                
+                {% for i in labels %}
+                    <td>{{ i }}</td>
+                {% endfor %}
+                
+            </thead>
+            <tbody>
+            {% for i in product %}
+                <tr>
+                    {% for j in i %}
+                        <td>{{ j }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+            
+        </table>
+    </div>
+    <div class="main"><h2><a href="/member">返回主選單</a></h2></div>
+</body>
+</html>

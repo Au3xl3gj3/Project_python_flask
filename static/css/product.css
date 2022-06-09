@@ -1,0 +1,38 @@
+
+.main{
+  text-align: center;
+}
+.data{
+    margin: 20px auto;
+}
+table{
+  border-spacing: 0;
+  width: 100%;
+}
+tr{
+  text-align: center;
+}
+th{
+  padding: 10px;
+}    
+table tbody tr:nth-child(odd){
+    background-color: #eee
+}
+table thead {
+    background-color: #66B3FF;
+    color: white;
+}
+  table thead td:first-child{
+    border-radius: 5px 0 0 0;
+    border: 1px solid #66B3FF;
+}
+table thead td:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #66B3FF;
+}
+  table tbody tr:last-child td:first-child{
+    border-radius: 0 0 0 5px;
+}
+  table tbody tr:last-child td:last-child{
+    border-radius: 0 0 5px 0;
+}

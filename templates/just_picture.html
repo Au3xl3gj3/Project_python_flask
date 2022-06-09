@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>訂單資訊</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/just_picture.css') }}">
+</head>
+<body>
+    <br>
+    <br>
+    <table style="width:400px;margin:0px auto">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td>使用率</td>
+                <td>{{ use_rate }}%</td>
+            </tr>
+            <tr>
+                <td>剩餘空間</td>
+                <td>{{ remain }}cm3</td>
+            </tr>
+            <tr>
+                <td>沒裝進箱子體積</td>
+                <td>{{ volume_f }}cm3</td>
+            </tr>
+        </tbody>
+        </tr>
+    </table>
+    <div id="function">
+        <h5><a href="/member">返回主選單</a></h5>
+        <h5><a href="/order_query">繼續查詢</a></h5>
+    </div>
+</body>
+</html>
